@@ -7,10 +7,20 @@
     "start": "vercel dev",
     "deploy": "vercel deploy --prod"
   },
+  "engines": {
+    "node": "^14"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/puppeteer": "2.0.1",
+    "@types/puppeteer-core": "2.0.0",
     "vercel": "^28.4.6"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "dotenv": "^16.0.3",
+    "puppeteer-core": "^10.4.0"
   }
 }
