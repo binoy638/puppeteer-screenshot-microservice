@@ -19,8 +19,11 @@
     "vercel": "^28.4.6"
   },
   "dependencies": {
+    "@types/jsonwebtoken": "^8.5.9",
     "chrome-aws-lambda": "^10.1.0",
     "dotenv": "^16.0.3",
-    "puppeteer-core": "^10.4.0"
+    "jsonwebtoken": "^8.5.1",
+    "puppeteer-core": "^10.4.0",
+    "zod": "^3.19.1"
   }
 }
