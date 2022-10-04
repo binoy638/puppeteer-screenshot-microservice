@@ -9,10 +9,7 @@ dotenv.config();
 export default async (req: VercelRequest, res: VercelResponse) => {
   try {
     let dataToVerify = req.query as unknown;
-
     if (process.env.JWT_SECRET) {
-      console.log("inside");
-      console.log({ jwt: process.env.JWT_SECRET });
       const { data } = req.query;
       if (!data) {
         res.status(404).send("JWT not found");
@@ -22,6 +19,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
     }
 
     const config = await screenshotConfigsSchema.parseAsync(dataToVerify);
+
     const file = await takePageScreenshot(config);
     res.setHeader("Content-Type", "image/jpeg");
 
