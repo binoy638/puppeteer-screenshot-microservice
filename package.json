@@ -1,0 +1,16 @@
+{
+  "name": "puppeteer-screenshot-microservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vercel": "^28.4.6"
+  }
+}
