@@ -19,7 +19,6 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         return;
       }
       dataToVerify = jwt.verify(data as string, process.env.JWT_SECRET);
-      console.log({ dataToVerify });
     }
 
     const config = await screenshotConfigsSchema.parseAsync(dataToVerify);
